@@ -16,6 +16,16 @@ A PyTorch project for multi-source medical image classification. It combines an 
 
 The 11-label split separates recorded source groups. Patient-level independence is unverified. The historical 26-label experiment had confirmed source-image overlap across its training and test sets. The external lung evaluation covers adenocarcinoma and squamous cell carcinoma, with two of twelve preselected cases lacking eligible tiles. These results describe the recorded experiments.
 
+### Where the classifiers differ
+
+![Per-class F1 on the shared 11-label split](figures/per_class_f1.png)
+
+CancerCNN leads by eight percentage points on overall test accuracy. On oral squamous cell carcinoma, ResNet-18 has a higher class F1 (0.757 vs. 0.105). The class chart includes the test support for each label.
+
+![Training and validation curves with the selected epochs](figures/training_comparison.png)
+
+The vertical markers show the epochs selected by minimum validation loss. Run `python tools/summarize_results.py` to verify the aggregate metrics and regenerate both charts and a per-class CSV. See the [model and evaluation workflow](docs/model-workflow.md) for the architecture and checkpoint details.
+
 ## Quick start
 
 Tested with Python 3.12 on Windows x64 using CPU PyTorch. Install dependencies, then execute the end-to-end synthetic smoke test from the repository root.

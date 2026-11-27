@@ -16,6 +16,16 @@
 
 11 类实验隔离了已记录的来源组，患者独立性仍待验证。历史 26 类图像级结果存在已查实的跨集合原图关联。TCGA 小样本外部队列仅覆盖肺腺癌和肺鳞癌。
 
+### 两种模型在哪些类别上有差异
+
+![同一测试集上的逐类 F1](figures/per_class_f1.png)
+
+CancerCNN 的总体准确率高 8 个百分点。口腔鳞癌这一类呈现不同结果，ResNet-18 的 F1 为 0.757，CancerCNN 为 0.105。图中括号标出了各类测试图片数量。
+
+![训练与验证曲线及选模轮次](figures/training_comparison.png)
+
+竖虚线标出验证损失最低的轮次。在仓库根目录运行 `python tools/summarize_results.py`，可以用聚合记录核对准确率、F1 与选模轮次，并重绘两张图、导出逐类 CSV。模型构成与训练流程见[设计说明](docs/model-workflow.md)。
+
 ## 运行
 
 在仓库根目录执行。已在 Windows x64、Python 3.12 和 CPU 版 PyTorch 上验证。

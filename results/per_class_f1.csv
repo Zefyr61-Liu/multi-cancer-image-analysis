@@ -1,0 +1,12 @@
+class,test_images,cancercnn_f1,resnet18_f1
+ALL/all_benign,12,0.416667,0.000000
+ALL/all_early,13,0.740741,0.210526
+ALL/all_pre,11,0.842105,0.777778
+ALL/all_pro,13,0.866667,0.553191
+Kidney Cancer/kidney_normal,10,0.000000,0.645161
+Kidney Cancer/kidney_tumor,11,0.687500,0.000000
+Lymphoma/lymph_cll,8,0.000000,0.000000
+Lymphoma/lymph_fl,12,0.750000,0.000000
+Lymphoma/lymph_mcl,7,0.000000,0.411765
+Oral Cancer/oral_normal,11,0.457143,0.526316
+Oral Cancer/oral_scc,17,0.105263,0.756757
