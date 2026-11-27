@@ -1,0 +1,27 @@
+{
+  "0bfe19894ef9a5bfa977de013597cc8a1615a8c09fb7d98cb01c0590dd571933": {
+    "protocol_field": "adaptation_protocol_sha256",
+    "protocol_sha256": "ad4c54ba9a014e24b2688129335365d3a4592e8e457bf5f66b56558babeaeecc",
+    "epoch": 2,
+    "manifests": {
+      "0ac12cb43aad612f336a96a835e8bab3742786cf8f2af22c8d4ab2ee1861576e": ["test"]
+    },
+    "scope": "Previously observed 26-class image-level test with evidence of shared source images across splits."
+  },
+  "461c39946e375d1820b923b89bcd2d19626682e8d245c916ced84425e9d7f343": {
+    "protocol_sha256": "eefc472f5ee62ef0f36e540ae10d9db50f54a977656e572effcd3b3a7a3f1872",
+    "epoch": 9,
+    "manifests": {
+      "0ac12cb43aad612f336a96a835e8bab3742786cf8f2af22c8d4ab2ee1861576e": ["test"]
+    },
+    "scope": "Previously observed 26-class image-level test with evidence of shared source images across splits."
+  },
+  "e1a43ccc13a488904602757751c57e7d22e888476e3566faa8ae8481349853f1": {
+    "protocol_sha256": "fb8e055694c619e2caf626c1b9b4eb6299c4054afe5e84ab3b87378bc0cc72f4",
+    "epoch": 12,
+    "manifests": {
+      "0ac12cb43aad612f336a96a835e8bab3742786cf8f2af22c8d4ab2ee1861576e": ["test"]
+    },
+    "scope": "Previously observed 26-class image-level test with evidence of shared source images across splits."
+  }
+}

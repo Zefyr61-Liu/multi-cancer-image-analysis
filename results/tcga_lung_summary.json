@@ -1,0 +1,14 @@
+{
+  "baseline": {
+    "tile_accuracy": 0.0375,
+    "correct_cases": 0,
+    "cases": 10
+  },
+  "adapted": {
+    "tile_accuracy": 0.575,
+    "correct_cases": 5,
+    "cases": 10
+  },
+  "tiles": 80,
+  "preselected_cases": 12
+}
