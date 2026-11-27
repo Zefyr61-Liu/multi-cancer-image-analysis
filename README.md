@@ -38,15 +38,6 @@ python -m cancer_lab predict --checkpoint outputs/run/best.pt --image /path/to/i
 
 The group CSV contains `path,group_id`. Paths are relative to the image root. Use source-image, slide or patient groups according to the available evidence.
 
-## Container
-
-The CPU container packages the command-line interface and its dependencies.
-
-```sh
-docker run --rm ghcr.io/zefyr61-liu/multi-cancer-image-analysis:v1.0.0 --help
-docker run --rm --entrypoint python ghcr.io/zefyr61-liu/multi-cancer-image-analysis:v1.0.0 smoke_test.py
-```
-
 ## Repository structure
 
 - `cancer_lab/` contains models, preprocessing, split checks, training, evaluation and inference.
