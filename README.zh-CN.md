@@ -28,6 +28,15 @@ python -m unittest discover -s tests -q
 
 `smoke_test.py` 生成合成图像，实际执行数据划分、训练、测试和预测。使用自有数据时，把图片按类别整理，并提供带 `path,group_id` 两列的分组表。完整命令见[英文运行说明](README.md#quick-start)。
 
+## 容器
+
+GitHub Packages 提供包含命令行和 CPU 依赖的镜像。可以在容器中直接运行合成样例。
+
+```sh
+docker run --rm ghcr.io/zefyr61-liu/multi-cancer-image-analysis:v1.0.0 --help
+docker run --rm --entrypoint python ghcr.io/zefyr61-liu/multi-cancer-image-analysis:v1.0.0 smoke_test.py
+```
+
 ## 文件组织
 
 - `cancer_lab/` 包含模型、预处理、划分校验、训练、评估和推理。
